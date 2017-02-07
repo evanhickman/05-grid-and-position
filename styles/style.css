@@ -24,7 +24,7 @@ img {
 
 /*NAVBAR*/
 .top-nav {
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   line-height: 2rem;
   overflow: auto;
 
@@ -87,10 +87,12 @@ img {
 .grid-item {
   position: relative;
   margin: 2rem;
+  min-width: 20rem;
   flex-basis: calc(100% / 2 - 2rem - 2rem);
   flex-grow: 1;
 
   /*background: goldenrod;*/
+  box-shadow:
 }
 
 /*CARD*/
@@ -98,6 +100,7 @@ img {
   position: relative;
 
   background: #f1f1f1;
+  box-shadow: 3px 3px 4px grey;
 }
 
 .card-tag {
@@ -110,6 +113,7 @@ img {
 
   text-align: center;
   background: #2196F3;
+  box-shadow: 3px 3px 4px grey;
 }
 
 .card-top {
@@ -117,6 +121,8 @@ img {
   position: relative;
 
   background: #FDCC52;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
 
 .card-bottom {
@@ -124,6 +130,8 @@ img {
   padding: 1rem;
 
   color: #242525;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .card-bottom__text {
@@ -141,4 +149,5 @@ img {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
+  box-shadow: 3px 3px 4px grey;
 }
