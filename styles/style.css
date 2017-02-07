@@ -8,7 +8,8 @@ body {
 
   font-family: Helvetica, sans-serif;
   line-height: 1.2rem;
-  background: #f1f1f1
+  background: #f1f1f1;
+  color: #f1f1f1;
   /*background: red;*/
 }
 
@@ -101,6 +102,7 @@ img {
 
 .card-tag {
   margin: 0;
+  padding: 0.4rem;
   position: absolute;
   top: 0;
   left: 50%;
@@ -111,7 +113,7 @@ img {
 }
 
 .card-top {
-  padding: 0.5rem 0 0.5rem 4rem;
+  padding: 1rem 0 1rem 3rem;
   position: relative;
 
   background: #FDCC52;
@@ -120,6 +122,8 @@ img {
 .card-bottom {
   margin: 0;
   padding: 1rem;
+
+  color: #242525;
 }
 
 .card-bottom__text {
@@ -134,7 +138,7 @@ img {
 
   transform: translate(-50%, 50%);
 
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
 }
