@@ -1,3 +1,4 @@
+/*RESETS*/
 * {
   box-sizing: border-box;
 }
@@ -6,12 +7,161 @@ body {
   margin: 0;
 
   font-family: Helvetica, sans-serif;
+  line-height: 1.2rem;
+  background: #FFF;
+  color: #FFF;
+  /*background: red;*/
 }
 
 ul {
   list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:hover {
+  color: #FDCC52;
 }
 
 img {
   max-width: 100%;
+}
+
+/*NAVBAR*/
+.top-nav {
+  padding: 1rem 2rem;
+  line-height: 2rem;
+  overflow: auto;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  background: #2196F3;
+  color: #FFF;
+}
+
+.navbar-group__left {
+  float: left;
+
+  /*background: orange;*/
+}
+
+.navbar-group__right {
+  float: right;
+
+  /*background: purple;*/
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list__item {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list__item + .nav-list__item {
+  margin-left: 2rem;
+}
+
+/*GRID*/
+.section {
+  padding: 2rem;
+  margin-top: 4rem;
+
+  /*background: green;*/
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+
+  /*background: pink;*/
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.grid-item {
+  position: relative;
+  margin: 2rem;
+  min-width: 20rem;
+  flex-basis: calc(100% / 2 - 2rem - 2rem);
+  flex-grow: 1;
+
+  /*background: goldenrod;*/
+  box-shadow:
+}
+
+/*CARD*/
+.card {
+  position: relative;
+
+  background: #FFF;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.card-tag {
+  margin: 0;
+  padding: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  background: #2196F3;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.card-top {
+  padding: 1rem 0 1rem 3rem;
+  position: relative;
+
+  background: #FDCC52;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.card-bottom {
+  margin: 0;
+  padding: 1rem;
+
+  color: #242525;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.card-bottom__text {
+  margin: 0;
+}
+
+.card-pic {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  margin: 0;
+
+  transform: translate(-50%, 50%);
+
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  box-shadow: 3px 3px 4px grey;
 }
